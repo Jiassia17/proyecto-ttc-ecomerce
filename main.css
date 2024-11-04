@@ -91,6 +91,12 @@ wrap-icon-header {
     opacity: 0.6;
     text-align: center;
 }
+
+.modal-dialog.modal_2{
+    position: absolute !important;
+    right: 0 !important;
+    min-width: 500px !important;
+}
 /* Carrusel */
 
 .container-carousel{
