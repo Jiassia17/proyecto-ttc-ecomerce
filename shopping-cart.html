@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap 5</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=remove" />        
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid px-0">
+            <div class="top-bar">
+                <div
+                    class=" content-topbar container-fluid d-flex flex-start justify-content-center h-100 text-white bg-dark">
+                    <div class="left-top-bar d-flex flex-nowrap justify-content-center align-items-center">
+                        <p class="text-center my-0">Envío gratis por compras mayores a $100.000 pesos</p>
+                    </div>
+                    <div class="right-top-bar container d-flex h-100 mx-0 align-items-center  justify-content-end  ">
+                        <a href="#" class="d-flex px-3 text-decoration-none text-white">Ayuda</a>
+                        <a href="#" class="d-flex px-3  text-decoration-none text-white">Mi cuenta</a>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-2">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><span class="fs-3 fw-bold ">ASSIA</span><span class="fs-3">
+                            STORE</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="index.html" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Principal
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="index.html">Principal 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Principal 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Principal 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Tienda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contáctanos</a>
+                            </li>
+                        </ul>
+                        <div class="wrap-icon-header d-flex flex-wrap justify-content-end aling-items-center ">
+                            <div class="icon-header-item ps-3 pe-2">
+                                <a href="#" class="position-relative" data-bs-toggle="modal" data-bs-target="#modal_1">
+                                    <img src="assets/icons/search.svg">
+                                </a>
+                            </div>
+                            <div class="icon-header-item ps-3 pe-2">
+                                <a href="#" class="position-relative" data-bs-toggle="modal" data-bs-target="#modal_2">
+                                    <img src="assets/icons/shopping_cart.svg" alt="">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                        2+
+                                        <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="icon-header-item ps-3 pe-2">
+                                <a href="#" class="position-relative" data-bs-toggle="modal" data-bs-target="#modal_3">
+                                    <img src="assets/icons/favorite.svg" alt="">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                        1+
+                                        <span class="visually-hidden">unread messages</span>
+                                </a>
+                                </span>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal_1" tabindex="-1" aria-labelledby="modalLabel-1"
+                                aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="modalLabel-1">Buscador de productos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <nav class="navbar navbar-light bg-light my-0 py-0">
+                                                <div class="container-fluid ">
+                                                    <form class="d-flex flex-grow-1 bg-light">
+                                                        <input class="form-control me-2" type="search"
+                                                            placeholder="Buscar productos" aria-label="Search">
+                                                        <button class="btn btn-outline-primary"
+                                                            type="submit">Buscar</button>
+                                                    </form>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade .wrap-header-cart" id="modal_2" tabindex="-1"
+                                aria-labelledby="modalLabel-2" aria-hidden="true" data-bs-backdrop="static"
+                                data-bs-keyboard="false">
+                                <div class="modal-dialog modal-dialog-scrollable modal_2">
+                                    <div class="modal-content">
+                                        <div class="modal-header w-100">
+                                            <h5 class="modal-title" id="modalLabel-2">Tu carrito de compras</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul class="header-cart-wrapitem w-100">
+                                                <li class="header-cart-item d-flex flex-wrap align-items-start pb-3">
+                                                    <div class="header-cart-item-img ">
+                                                        <img src="assets/img/productos/camisetas/camiseta-blanca-1.png"
+                                                            alt="IMG" class="d-block h-25 mx-auto ">
+                                                    </div>
+                                                    <div
+                                                        class="header-cart-item-txt d-flex flex-column col-1 flex-grow-1">
+                                                        <a href="#"
+                                                            class="header-cart-item-name text-dark text-decoration-none h5 ">Camiseta
+                                                            Blanca</a>
+                                                        <span class="header-cart-item-info">1x$35.000</span>
+                                                    </div>
+                                                </li>
+                                                <li class="header-cart-item d-flex flex-wrap align-items-start pb-3">
+                                                    <div class="header-cart-item-img ">
+                                                        <img src="assets/img/productos/jeans/jean-mujer-1.png" alt="IMG"
+                                                            class="d-block h-25 mx-auto ">
+                                                    </div>
+                                                    <div
+                                                        class="header-cart-item-txt d-flex flex-column col-1 flex-grow-1">
+                                                        <a href="#"
+                                                            class="header-cart-item-name text-dark text-decoration-none h5 ">Jean
+                                                            Mujer moda rota</a>
+                                                        <span class="header-cart-item-info">1x$125.000</span>
+                                                    </div>
+                                                </li>
+                                                <li class="header-cart-item d-flex flex-wrap align-items-start pb-3">
+                                                    <div class="header-cart-item-img ">
+                                                        <img src="assets/img/productos/zapatos/zapatillas-dep-homb-nike-1.png"
+                                                            alt="IMG" class="d-block h-25 mx-auto ">
+                                                    </div>
+                                                    <div
+                                                        class="header-cart-item-txt d-flex flex-column col-1 flex-grow-1">
+                                                        <a href="#"
+                                                            class="header-cart-item-name text-dark text-decoration-none h5 ">Zapatillas
+                                                            Nike Dinamic</a>
+                                                        <span class="header-cart-item-info">1x$450.000</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer w-100 d-flex flex-column w-100 flex-grow-1 px-5">
+                                            <div class="header-cart-total py-2">Total: $610.000 pesos</div>
+                                            <div class="header-cart-buttoms pb-3 ">
+                                                <button type="button" class="btn btn-secondary" id="btn-carr"
+                                                    onclick="location.href ='shopping-cart.html'">Ver carrito</button>
+                                                <button type="button" class="btn btn-dark" id="bt-chk-out">Check
+                                                    out</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb p-5">
+                <li class="breadcrumb-item "><a href="index.html" class="text-decoration-none text-dark">Principal</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Carrito de compras</li>
+            </ol>
+        </nav>
+
+        <!-- form carrrito -->
+        <!-- Shoping Cart -->
+        <form class="bg-transparent pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-xl-7 mx-auto mb-5">
+                        <div class="ms-3 me--3 mx-xl-0">
+                            <div class="wrap-table-shopping-cart">
+                                <table class="table-shopping-cart">
+                                    <tr class="table_head">
+                                        <th class="column-1">Producto</th>
+                                        <th class="column-2"></th>
+                                        <th class="column-3">Precio</th>
+                                        <th class="column-4">Cantidad</th>
+                                        <th class="column-5">Total</th>
+                                    </tr>
+
+                                    <tr class="table_row">
+                                        <td class="column-1">
+                                            <div class="how-itemcart1">
+                                                <img src="assets/img/productos/camisetas/camiseta-blanca-1.png"
+                                                    alt="IMG" class="d-block h-25 mx-auto">
+                                            </div>
+                                        </td>
+                                        <td class="column-2">Camiseta Blanca</td>
+                                        <td class="column-3">$ 35.000</td>
+                                        <td class="column-4">
+                                            <div class="wrap-num-product d-flex flex-wrap ms-auto me-0">
+                                                <div
+                                                    class="btn-num-product-down d-flex align-items-center justify-content-center">
+                                                    <span"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M200-440v-80h560v80H200Z" class="d-flex w-100"/></svg></span>
+                                                </div>
+                                                <input class="txt-center num-product" type="number"
+                                                    name="num-product1" value="1">
+
+                                                <div class="btn-num-product-up d-flex align-items-center justify-content-center">
+                                                    <span"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg></span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="column-5">$ 36.00</td>
+                                    </tr>
+
+                                    <tr class="table_row">
+                                        <td class="column-1">
+                                            <div class="how-itemcart1">
+                                                <img src="images/item-cart-05.jpg" alt="IMG">
+                                            </div>
+                                        </td>
+                                        <td class="column-2">Lightweight Jacket</td>
+                                        <td class="column-3">$ 16.00</td>
+                                        <td class="column-4">
+                                            <div class="wrap-num-product flex-w m-l-auto m-r-0">
+                                                <div class="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
+                                                    <i class="fs-16 zmdi zmdi-minus"></i>
+                                                </div>
+
+                                                <input class="mtext-104 cl3 txt-center num-product" type="number"
+                                                    name="num-product2" value="1">
+
+                                                <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
+                                                    <i class="fs-16 zmdi zmdi-plus"></i>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="column-5">$ 16.00</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+                                <div class="flex-w flex-m m-r-20 m-tb-5">
+                                    <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text"
+                                        name="coupon" placeholder="Coupon Code">
+
+                                    <div
+                                        class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+                                        Apply coupon
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+                                    Update Cart
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
+                        <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+                            <h4 class="mtext-109 cl2 p-b-30">
+                                Cart Totals
+                            </h4>
+
+                            <div class="flex-w flex-t bor12 p-b-13">
+                                <div class="size-208">
+                                    <span class="stext-110 cl2">
+                                        Subtotal:
+                                    </span>
+                                </div>
+
+                                <div class="size-209">
+                                    <span class="mtext-110 cl2">
+                                        $79.65
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="flex-w flex-t bor12 p-t-15 p-b-30">
+                                <div class="size-208 w-full-ssm">
+                                    <span class="stext-110 cl2">
+                                        Shipping:
+                                    </span>
+                                </div>
+
+                                <div class="size-209 p-r-18 p-r-0-sm w-full-ssm">
+                                    <p class="stext-111 cl6 p-t-2">
+                                        There are no shipping methods available. Please double check your address, or
+                                        contact us if you need any help.
+                                    </p>
+
+                                    <div class="p-t-15">
+                                        <span class="stext-112 cl8">
+                                            Calculate Shipping
+                                        </span>
+
+                                        <div class="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
+                                            <select class="js-select2" name="time">
+                                                <option>Select a country...</option>
+                                                <option>USA</option>
+                                                <option>UK</option>
+                                            </select>
+                                            <div class="dropDownSelect2"></div>
+                                        </div>
+
+                                        <div class="bor8 bg0 m-b-12">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="state"
+                                                placeholder="State /  country">
+                                        </div>
+
+                                        <div class="bor8 bg0 m-b-22">
+                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text"
+                                                name="postcode" placeholder="Postcode / Zip">
+                                        </div>
+
+                                        <div class="flex-w">
+                                            <div
+                                                class="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer">
+                                                Update Totals
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-w flex-t p-t-27 p-b-33">
+                                <div class="size-208">
+                                    <span class="mtext-101 cl2">
+                                        Total:
+                                    </span>
+                                </div>
+
+                                <div class="size-209 p-t-1">
+                                    <span class="mtext-110 cl2">
+                                        $79.65
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
