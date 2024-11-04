@@ -97,6 +97,17 @@ wrap-icon-header {
     right: 0 !important;
     min-width: 500px !important;
 }
+
+.modal-dialog.modal_2 .modal-content .modal-footer{
+    width: 100% !important;
+}
+.header-cart-buttoms {
+    display: flex;
+    width: 100% !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
 /* Carrusel */
 
 .container-carousel{
