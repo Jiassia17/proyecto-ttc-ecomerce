@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras</title>
+    <title>Productos</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/card.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=filter_list,close" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 </head>
 
 <body>
@@ -43,8 +45,8 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="index.html" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle " href="index.html" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Principal
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,7 +56,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="shop.html">Tienda</a>
+                                <a class="nav-link active" aria-current="page" href="shop.html">Tienda</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="shopping-cart.html">Carrito de compras</a>
@@ -191,18 +193,42 @@
         </div>
     </header>
     <main>
-        <!-- breadcrumb -->
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb p-5">
-                <li class="breadcrumb-item "><a href="shop.html" class="text-decoration-none text-dark">Tienda</a>
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">Carrito de compras</li>
-            </ol>
-        </nav>
+        <!-- Products -->
+        <section class="container-fluid mt-2 pb-5">
+            <div class="container-fluid ">
+                <div class="d-flex justify-content-between align-items-center flex-wrap pb-2">
+                    <div class="d-flex flex-wrap justify-content-start align-items-center my-3 filter-top-group gap-2">
+                        <button class="btn-products active" type="button">Todos los productos</button>
+                        <button class="btn-products" type="button">Mujeres</button>
+                        <button class="btn-products" type="button">Hombres</button>
+                        <button class="btn-products" type="button">Camisetas</button>
+                        <button class="btn-products" type="button">Jeans</button>
+                        <button class="btn-products" type="button">Zapatos</button>
+                        <button class="btn-products" type="button">Varios</button>
+                    </div>
+                    <div class="d-flex flex-wrap justify-content-center align-items-center my-3">
+                        <div class="d-flex justify-content-center align-items-center filter js-show-filter">
+                            <i class="icon-filter zmdi zmdi-filter-list me-2"></i>
+                            <i class="icon-close-filter zmdi zmdi-close d-none me-2"></i>
+                            Filtro
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center filter js-show-search">
+                            <i class="icon-search zmdi zmdi-search me-2"></i>
+                            <i class="icon-close-search zmdi zmdi-close d-none me-2"></i>
+                            Búsqueda
+                        </div>
+                    </div>
+                </div>
+                <div class=" d-flex align-items-center ">
+                    <hr>
+                    <div class="row justify-content-center" id="cards"></div>
+                </div>
 
-        <!-- form carrrito -->
+            </div>
+        </section>
+
         <!-- Shoping Cart -->
-        <form class="bg-transparent pt-5 pb-5">
+        <form class="bg-transparent pt-5 pb-5  d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-xl-7 mx-auto mb-5">
@@ -221,8 +247,8 @@
                                     </tbody>
                                     <tfoot>
                                         <tr id="footer">
-                                            <th scope="row" colspan="5" class="text-center text-info">Carrito vacío
-                                                ¡Comience a comprar!</th>
+                                            <th scope="row" colspan="5" class="text-center text-info">Carrito vacío¡Comience a comprar!
+                                            </th>
                                         </tr>
                                     </tfoot>
                                 </table>
@@ -237,13 +263,13 @@
                                         cupón</div>
                                 </div>
                                 <div class="d-flex justify-content-center align-items-center btn-coupon"">
-                                    Actualizar
+                                        Actualizar
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class=" col-sm-10 col-lg-7 col-xl-5 mx-auto mb-5">
+    
+                        <div class=" col-sm-10 col-lg-7 col-xl-5 mx-auto mb-5">
                                     <div class="mx-xl-0  cart-fact">
                                         <h4 class="pb-4 text-uppercase">Total compras</h4>
                                         <div class="d-flex flex-wrap align-items-start pb-3 bord-b-d">
@@ -340,6 +366,8 @@
         </form>
 
     </main>
+
+
     <!-- /////////////Templates/////////// -->
     <template id="template-cards">
         <div class=" wrapper justify-content-lg-between col-xl-3 col-lg-3 col-md-4 col-sm-12 mb-3 mx-3 mt-3 ">
@@ -401,7 +429,6 @@
         </td>
         <td class="font-weight-bold">$ <span>5000</span></td>
     </template>
-
     <!-- ///////////FOOTER///////////// -->
     <footer class="bg-dark" id="templatemo_footer">
         <div class="container">
@@ -512,6 +539,8 @@
         </div>
     </footer>
     <!-- Fin footer -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

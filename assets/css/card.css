@@ -1,0 +1,133 @@
+
+.wrapper {
+  position: relative;
+}
+.wrapper .card {
+  position: relative;
+  min-width: 260px !important;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  padding-right:30px !important;
+}
+.wrapper .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2063a1d8;
+  clip-path: circle(150px at 70% 20%);
+  transition: 0.5s ease-in-out;
+}
+.wrapper .card:hover::before {
+  clip-path: circle(300px at 80% -20%);
+}
+.wrapper .card:after {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  content: "Assia Store";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 90px;
+  top: 40%;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
+.wrapper .card .imgBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+.wrapper .card:hover .imgBox {
+  top: 0%;
+  transform: translateY(0%);
+}
+.wrapper .card .imgBox img {
+  max-height: 207px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 270px;
+}
+.wrapper .card .contentBox {
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+.wrapper .card:hover .contentBox {
+  height: 110px;
+}
+.wrapper .card .contentBox h6 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.wrapper .card .contentBox .size,
+.wrapper .card .contentBox .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.wrapper .card:hover .contentBox .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+.wrapper .card:hover .contentBox .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.wrapper .card .contentBox .size h3,
+.wrapper .card .contentBox .color h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+wrapper .card .contentBox a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #b907b9;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 1;
+  transform: translateY(50px);
+  
+}
+.wrapper .card:hover .contentBox a {
+  opacity: 1;
+  transform: translateY(0px);
+
+  
+}
