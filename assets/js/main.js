@@ -75,7 +75,7 @@ const fragment = document.createDocumentFragment();
 let cart = {};
 async function fetchData() {
   try {
-    const resp = await fetch("../bd_json/productos.json");
+    const resp = await fetch("https://raw.githubusercontent.com/Jiassia17/proyecto-ttc-ecomerce/refs/heads/main/bd_json/productos.json");
     const data = await resp.json();
     paintCards(data); /* Llamar a la función */
   } catch (error) {
