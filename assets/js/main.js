@@ -75,7 +75,7 @@ const fragment = document.createDocumentFragment();
 let cart = {};
 async function fetchData() {
   try {
-    const resp = await fetch("https://raw.githubusercontent.com/Jiassia17/proyecto-ttc-ecomerce/refs/heads/main/bd_json/productos.json");
+    const resp = await fetch("../bd_json/productos.json");
     const data = await resp.json();
     paintCards(data); /* Llamar a la función */
   } catch (error) {
@@ -118,6 +118,7 @@ function addCart (e) {
   if (e.target.classList.contains("btn-buy")) {
     setCart(e.target.parentElement);
   }
+  e.preventDefault()
   e.stopPropagation();
 };
 function setCart (objeto) {
@@ -191,9 +192,10 @@ function paintFooter () {
   footer.appendChild(fragment);
 
   const btnVaciar = document.getElementById('vaciar-cart')
-  btnVaciar.addEventListener('click', () => {
+  btnVaciar.addEventListener('click', (e) => {
     cart = {}
-    location.reload()
+    e.preventDefault()
+    //location.reload()
     paintCart()
   })
 };
