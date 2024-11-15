@@ -20,7 +20,7 @@
         "categoria": "jeans",
         "descripcion": "Jean de mujer con rotos en las rodillas",
         "tallas": ["6", "8", "10", "12", "14", "16", "18"],
-        "genero": "hujer"
+        "genero": "mujer"
     },
     {
         "id": 3,

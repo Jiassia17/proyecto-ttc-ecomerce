@@ -78,15 +78,14 @@ function paintFooter() {
   btnVaciar.addEventListener("click", (e) => {
     cart = {};
     e.preventDefault();
-    //location.reload()
     paintCart();
+    document.getElementById("precio_final").textContent = 0
+    document.getElementById("subtotal").textContent = 0
   });
 }
 function btnAccion(e) {
   //acción de aumentar
   if (e.target.classList.contains("btn-num-product-up")) {
-    //console.log(e.target);
-    //console.log(cart[e.target.dataset.id]);
     const producto = cart[e.target.dataset.id];
     producto.cantidad++;
     cart[e.target.dataset.id] = { ...producto };
@@ -98,7 +97,6 @@ function btnAccion(e) {
     if (producto.cantidad === 0) {
       delete cart[e.target.dataset.id];
     }
-
     paintCart();
   }
   e.stopPropagation();
