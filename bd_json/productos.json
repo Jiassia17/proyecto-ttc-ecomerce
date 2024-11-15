@@ -60,7 +60,7 @@
         "nombre": "Reloj Mujer",
         "precio": 90000,
         "stock": 10,
-        "imagen": "../assets/img/productos/relojes/rlj_m_1.png",
+        "imagen": "./assets/img/productos/relojes/rlj_m_1.png",
         "categoria": "zapatos",
         "descripcion": "Hermoso reloj de mujer con accesorios incluidos",
         "tallas": [""],
