@@ -27,7 +27,7 @@
         "nombre": "Zapatillas Nike Dinamic",
         "precio": 250000,
         "stock": 10,
-        "imagen": "../assets/img/productos/zapatos/zapatillas-dep-homb-nike-1.png",
+        "imagen": "./assets/img/productos/zapatos/zapatillas-dep-homb-nike-1.png",
         "categoria": "Zapatos",
         "descripcion": "Zapatillas deportivas para hombre marca Nike",
         "tallas": ["38", "39", "40", "41", "42", "43", "44", "45"],
