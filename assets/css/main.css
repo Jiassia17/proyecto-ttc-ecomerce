@@ -203,6 +203,7 @@ wrap-icon-header {
 
 /* carrito de compras */
 .wrap-table-shopping-cart {
+  width: 100% !important;
   overflow: auto;
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6;
