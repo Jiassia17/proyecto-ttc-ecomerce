@@ -29,7 +29,7 @@ function paintCart() {
   console.log(cart);
   items.innerHTML = "";
   Object.values(cart).forEach((producto) => {
-    templateCart.querySelector(".column-1").textContent = producto.id;
+    templateCart.querySelector("img").setAttribute("src", producto.imagen );
     templateCart.querySelector(".column-2").textContent = producto.nombre;
     templateCart.getElementById("precio").textContent = producto.precio;
     templateCart.querySelector(".num-product").textContent = producto.cantidad;

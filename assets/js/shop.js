@@ -69,27 +69,27 @@ function crearItems(arr) {
 function addCart(e) {
   //console.log(e.target);
   if (e.target.classList.contains("btn-buy")) {
-    setCart(e.target.parentElement);
+    setCart(e.target.parentElement.parentElement);
   }
   e.stopPropagation();
   e.preventDefault();
   paintNumProd();
 }
 function setCart(objeto) {
-  //console.log(objeto);
+  console.log(objeto);
   const producto = {
     id: objeto.querySelector(".btn-buy").dataset.id,
     nombre: objeto.querySelector("h6").textContent,
     precio: objeto.querySelector("#precio").textContent,
-    /* imagen: objeto.querySelector(img), */
+    imagen: objeto.querySelector("img").getAttribute('src'),
     cantidad: 1,
   };
   if (cart.hasOwnProperty(producto.id)) {
     producto.cantidad = cart[producto.id].cantidad + 1;
-    console.log(producto.cantidad);
+    //console.log(producto.cantidad);
   }
   cart[producto.id] = { ...producto };
-  //console.log(producto);
+  console.log(producto);
   //paintCart();
   localStorage.setItem("cart", JSON.stringify(cart));
 }

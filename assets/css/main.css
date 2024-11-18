@@ -294,12 +294,14 @@ wrap-icon-header {
 }
 .table-shopping-cart .column-1 {
   width: 133px;
-  padding-left: 50px;
+  padding: 0 5px;
+  justify-content: center;
+  align-items: center;
 }
 .how-itemcart1 {
-  width: 60px;
+  width: 100%;
   position: relative;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   cursor: pointer;
 }
 .how-itemcart1::after {
@@ -324,7 +326,7 @@ wrap-icon-header {
 .how-itemcart1 img {
   vertical-align: middle;
   border-style: none;
-  height: 60px !important;
+  height: 90px !important;
 }
 /*//////////////////////////////////////////////////////////////////
 [ Num Product ]*/
