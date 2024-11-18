@@ -35,6 +35,8 @@ function paintCart() {
     templateCart.querySelector(".num-product").textContent = producto.cantidad;
     templateCart.querySelector(".btn-num-product-down").dataset.id =
       producto.id;
+    templateCart.querySelector(".how-itemcart1").dataset.id =
+      producto.id;
     templateCart.querySelector(".btn-num-product-up").dataset.id = producto.id;
     templateCart.querySelector(".column-5").textContent =
       producto.cantidad * producto.precio;
@@ -99,5 +101,13 @@ function btnAccion(e) {
     }
     paintCart();
   }
+  if (e.target.classList.contains("how-itemcart1")) {
+    //console.log(e);    
+    const producto = cart[e.target.dataset.id];
+    producto.cantidad= 0;
+    delete cart[e.target.dataset.id]
+    paintCart();
+  }
+  
   e.stopPropagation();
 }
