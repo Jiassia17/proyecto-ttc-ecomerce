@@ -230,18 +230,32 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="modal-footer w-100 d-flex flex-column w-100 flex-grow-1 px-5">
-                                            
-                                            <div class="header-cart-buttoms pb-3 ">
-                                                <button type="button" class="btn btn-secondary" id="btn-carr"
-                                                    onclick="location.href ='shopping-cart.html'">Ver carrito</button>
-                                                <button type="button" class="btn btn-dark" id="bt-chk-out">Check
-                                                    out</button>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+                            <div class="modal fade" id="modal_4" tabindex="-1" aria-labelledby="modalLabel-5"
+                            aria-hidden="true" data-bs-keyboard="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title h1" id="modalLabel-4">Carrito de Compras</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <nav class="navbar navbar-light bg-light my-0 py-0">
+                                            <div class="container-fluid ">
+                                                <p class="d-flex flex-grow-1 bg-light">
+                                                    <i ></i>
+                                                    Producto agregado con exito al carrito.
+                                                </p>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             
                         </div>
 
@@ -443,7 +457,7 @@
                         <div class="size d-none">
                             <h3>Talla: </h3>
                         </div>
-                        <a href="#" class="btn btn-primary btn-buy mt-5">Comprar</a>
+                        <button type="button" class="btn btn-primary btn-buy mt-5" data-bs-toggle="modal" data-bs-target="#modal_4">Comprar</>
                     </div>
                 </div>
             </div>
